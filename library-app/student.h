@@ -1,22 +1,26 @@
+#include <iostream>
+
 #ifndef STUDENT_H
 #define STUDENT_H
 
 class Student {
     private:
-        string studentId;
-        string studentName;
-        string studentEmail;
+        std::string studentId;
+        std::string studentName;
+        std::string studentEmail;
 
     public:
-        // Constructor
-        Student(string studentId);
+        // Constructors
+        Student();
+        Student(std::string id);
 
         // Accessors
-        string getStudentId();
-        string getStudentEmail();
-        string getStudentName();
-        void setStudentEmail(string newEmail);
-        void setStudentName(string newName);
+        std::string getStudentId();
+        std::string getStudentEmail();
+        std::string getStudentName();
+        void setStudentId(std::string newId);
+        void setStudentEmail(std::string newEmail);
+        void setStudentName(std::string newName);
 };
 
 #endif

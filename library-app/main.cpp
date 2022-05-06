@@ -1,12 +1,13 @@
 #include <iostream>
+
 #include "librarycard.h"
 #include "student.h"
 
-using namespace std;
-
 int main() {
     // Declare Student model
+    Student student;
     // Declare LibraryCard model
+    LibraryCard card;
 
     // Set some properties on the student
 

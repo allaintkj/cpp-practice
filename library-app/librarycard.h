@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "student.h"
 
 #ifndef LIBRARYCARD_H
@@ -5,7 +7,7 @@
 
 class LibraryCard {
     private:
-        int booksBorrowed;
+        int booksBorrowed = 0;
         Student cardOwner;
 
     public:
@@ -16,12 +18,12 @@ class LibraryCard {
 
         // Accessors
         int getBooksBorrowed();
-        string getCardOwner();
-        void setCardOwner();
+        std::string getCardOwner();
+        void setCardOwner(Student student);
 
         // Methods
         void checkout(int booksToCheckout);
-        string printReport();
+        std::string generateReport();
 };
 
 #endif
