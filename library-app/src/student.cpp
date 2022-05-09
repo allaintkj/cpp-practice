@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "student.h"
+#include "../include/student.h"
 
 // Constructors
 Student::Student() {
@@ -19,6 +19,8 @@ Student::Student(std::string id) {
 std::string Student::getStudentId() { return studentId; }
 std::string Student::getStudentEmail() { return studentEmail; }
 std::string Student::getStudentName() { return studentName; }
+
+// Mutators
 void Student::setStudentId(std::string newId) { studentId = newId; }
 void Student::setStudentEmail(std::string newEmail) { studentEmail = newEmail; }
 void Student::setStudentName(std::string newName) { studentName = newName; }

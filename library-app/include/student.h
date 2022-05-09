@@ -18,6 +18,8 @@ class Student {
         std::string getStudentId();
         std::string getStudentEmail();
         std::string getStudentName();
+        
+        // Mutators
         void setStudentId(std::string newId);
         void setStudentEmail(std::string newEmail);
         void setStudentName(std::string newName);

@@ -11,14 +11,18 @@ class LibraryCard {
         Student cardOwner;
 
     public:
+        static const int MAXBOOKS = 5;
+
         // Constructors
         LibraryCard();
-        // Overloaded in case user wants to immediately checkout books
+        // In case user wants to immediately checkout books
         LibraryCard(int booksToCheckout);
 
         // Accessors
         int getBooksBorrowed();
         std::string getCardOwner();
+
+        // Mutators
         void setCardOwner(Student student);
 
         // Methods
