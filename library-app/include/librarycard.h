@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 #include "student.h"
 
@@ -7,7 +8,9 @@
 
 class LibraryCard {
     private:
+        static const int YEAR = 31557600;
         int booksBorrowed = 0;
+        time_t cardExpiry;
         Student cardOwner;
 
     public:
